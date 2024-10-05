@@ -1,0 +1,5 @@
+.idea/*
+_localsettings.py
+node_modules
+*/__pycache__/*
+venv

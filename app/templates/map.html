@@ -26,47 +26,55 @@
     <div class="col-md-4">
         <form>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="latitude">Latitude:</label>
                         <input type="number" class="form-control" id="latitude" name="latitude" value="51.3" required>
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="longitude">Longitude:</label>
                         <input type="number" class="form-control" id="longitude" name="longitude" value="-0.1"
                                required>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                 <div class="col-md-4">
                     <div class="form-group">
                         <label for="radius">Radius:</label>
                         <input type="number" class="form-control" id="radius" name="radius" value="3" required>
                     </div>
                 </div>
-                <div class="col-md-6">
+            </div>
+            <div class="row">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="layers">Layers:</label>
                         <input type="number" class="form-control" id="layers" name="layers" value="2" required>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <div class="form-group">
                         <label for="state">State:</label>
                         <input type="text" class="form-control" id="state" name="state">
                     </div>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="keywords">Keywords:</label>
+                        <input type="text" class="form-control" id="keywords" name="keywords">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-6 text-center">
                     <div class="form-group">
                         <label for="password">Password:</label>
                         <input type="password" class="form-control" id="password" name="password" required>
                     </div>
                 </div>
+                <div class="col-md-3"></div>
             </div>
         </form>
         <div class="row">
@@ -76,6 +84,7 @@
             <div class="text-center">
                 <button id="generateCommandButton" class="btn btn-success mt-2">Generate Command</button>
             </div>
+            <p id="command-text"></p>
         </div>
     </div>
     <div class="col-md-4"></div>

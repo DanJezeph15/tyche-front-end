@@ -111,6 +111,17 @@ function generate_map(token) {
     });
 }
 
+function generate_command() {
+    let latitude = $('#latitude').val();
+    let longitude = $('#longitude').val();
+    let radius = $('#radius').val();
+    let layers = $('#layers').val();
+    let keywords = $('#keywords').val();
+    let command = `python app/commands/find_places.py --location '${latitude}, ${longitude}' -r ${radius} --layers ${layers} -m -k '${keywords}'`;
+
+    $('#command-text').text(command)
+}
+
 $(document).ready(function () {
     $('#loadMapButton').bind('click', async function () {
         let password = $('#password');
@@ -123,5 +134,9 @@ $(document).ready(function () {
         } else {
             password.addClass('border-error')
         }
+    });
+
+    $('#generateCommandButton').bind('click', function () {
+        generate_command();
     });
 });
